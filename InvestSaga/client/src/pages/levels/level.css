@@ -1,0 +1,45 @@
+.levels-containers {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  color: white; 
+}
+.levels {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.levels:hover {
+  transform: translateY(-5px);
+}
+
+.levels img {
+  width: 100%;
+  max-width: 200px;
+  border-radius: 10px;
+}
+
+.levels h3 {
+  margin-top: 10px;
+  color: #333;
+}
+
+.levels a {
+  display: block;
+  padding: 10px;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.levels a:hover {
+  text-decoration: underline;
+}

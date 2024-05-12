@@ -1,0 +1,113 @@
+/* Importing Google font - Open Sans */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Define header and footer styles */
+header, footer {
+    height: 50px; /* Adjust height as needed */
+    background-color: #333; /* Example color for header and footer */
+    color: white;
+    text-align: center;
+    line-height: 50px;
+}
+
+/* Main content */
+.word-search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    margin-top: 0px; /* Ensure content is below the header */
+    height: calc(100vh - 100px); /* Adjust to exclude header and footer height */
+    background-image: url('../../../images/background.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.puzzle {
+    border: 3px solid #ff9800; 
+    display: inline-block;
+    padding: 10px;
+    background-color: #333; 
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.row {
+    display: flex;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 15px;
+}
+
+.cell {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: #444;
+    transition: background-color 0.3s ease;
+    margin-top: 5px;
+}
+
+.cell.selected {
+    background-color: #ff5722; /* Orange selected cell background */
+}
+
+.cell.found {
+    background-color: #4caf50; /* Green found cell background */
+}
+
+.sidebar {
+    max-width: 250px;
+    margin-left: 20px;
+}
+
+.score, .timer {
+    margin-bottom: 15px;
+    color: black;
+}
+
+.hints {
+    background-color: #333; /* Dark grey hints background */
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.hints h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #ff9800; /* Orange hint title */
+}
+
+.hints ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.hints li {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.found-word {
+    text-decoration: line-through;
+    margin-left: 5px;
+}
+
+.game-over {
+    font-size: 24px;
+    color: #f44336; /* Red game over text */
+    margin-top: 20px;
+}

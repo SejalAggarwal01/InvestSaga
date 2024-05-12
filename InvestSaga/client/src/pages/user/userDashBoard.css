@@ -1,0 +1,48 @@
+.progress-scores {
+  display: flex;
+  flex-direction: row;
+  align-items: center
+}
+
+.progress-score {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.progress-circle {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin-right:80px;
+  margin-left:80px;
+}
+
+.progress-circle-svg {
+  width: 100%;
+  height: 100%;
+}
+
+.progress-circle-background {
+  fill: none;
+  stroke: #ddd;
+  stroke-width: 10;
+}
+
+.progress-circle-progress {
+  fill: none;
+  stroke: #007bff;
+  stroke-width: 10;
+  stroke-linecap: round;
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+  transition: stroke-dasharray 0.8s ease;
+}
+
+.progress-circle-label {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  font-weight: bold;
+}

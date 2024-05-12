@@ -1,0 +1,114 @@
+/* Importing Google font - Open Sans */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.hang {
+    min-height: calc(100vh - (height_of_header + height_of_footer)); /* Adjust height_of_header and height_of_footer */
+    display: flex;
+    justify-content: center; /* Align contents horizontally */
+    align-items: center; /* Align contents vertically */
+    background-image: url('../../../images/background.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.HangmanGame {
+    font-family: "Open Sans", sans-serif;
+    background-color: white;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 900px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height: calc(100% - 40px); /* Adjust to accommodate top and bottom padding */
+    overflow-y: auto; /* Enable vertical scrolling if content exceeds container height */
+}
+.GameInfo {
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.Word-display {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.letter {
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-size: 2rem;
+    border-bottom: 3px solid #000;
+    padding-bottom: 5px;
+}
+
+.Keyboard {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* Adjust as needed */
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.Keyboard button {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    background-color: crimson;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.new-game {
+    width: 110px;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    background-color: crimson;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+/* Media queries for responsiveness */
+
+@media (max-width: 700px) {
+    .Keyboard {
+        grid-template-columns: repeat(4, 1fr); /* Adjust as needed */
+    }
+
+    .Keyboard button {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (max-width: 500px) {
+    .Keyboard {
+        grid-template-columns: repeat(3, 1fr); /* Adjust as needed */
+    }
+
+    .Keyboard button {
+        width: 35px;
+        height: 35px;
+        font-size: 0.9rem;
+    }
+}

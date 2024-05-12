@@ -1,0 +1,62 @@
+/* styles.css */
+.finance-game-page {
+  text-align: center;
+  position: relative;
+  margin-top: 30px;
+  color: white; /* Added for positioning the score button */
+}
+.finance-game-page h1{
+  color: white;
+}
+.score-button {
+  position: absolute;
+  top: 10px;
+  right: 50px;
+  width: 80px;
+  height: 30px;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 20px; 
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.score-button h4{
+  margin-top: 5px;
+}
+.level-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap onto multiple lines */
+  justify-content: center;
+  margin-top: 50px; /* Added margin for better spacing */
+}
+
+.level {
+  margin: 10px; /* Adjusted margin for better spacing */
+  text-decoration: none;
+}
+
+.level-thumbnail {
+  width: 150px; /* Adjust thumbnail size */
+  height: 150px; /* Adjust thumbnail size */
+  background-color: #f0f0f0;
+  border-radius: 50%; /* Make it circular */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #6b5b95;
+  transition: all 0.3s ease;
+}
+
+.level-thumbnail span {
+  font-weight: bold;
+  font-size: 24px; /* Adjust font size */
+  color: black;
+}
+
+.level:hover .level-thumbnail {
+  transform: scale(1.1);
+}

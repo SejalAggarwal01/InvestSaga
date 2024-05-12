@@ -1,0 +1,39 @@
+/* header.css */
+
+.navbar {
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar-brand {
+    color: black;
+    font-weight: bold; /* Make the navbar brand text bold */
+  }
+  
+  .nav-link {
+    color: black;
+    font-weight: bold; /* Make the nav links bold */
+  }
+  
+  .nav-link:hover {
+    color: #007bff;
+  }
+  
+  .dropdown-menu {
+    background-color: #fff;
+  }
+  
+  .dropdown-menu a {
+    color: #333 !important;
+  }
+  
+  .dropdown-menu a:hover {
+    background-color: #f0f0f0;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar-collapse {
+      background-color: #fff;
+    }
+  }
+  
